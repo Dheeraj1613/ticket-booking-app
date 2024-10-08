@@ -1,0 +1,104 @@
+.home-page {
+    padding: 0 2rem;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+  }
+  
+  .search-input {
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  
+  .profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  .profile-name {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    background-color: #f1f1f1;
+  }
+  
+  .nav-bar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .main-content {
+    margin-top: 1.5rem;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+  }
+  
+  .section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .movie-tiles,
+  .event-tiles,
+  .sports-tiles,
+  .play-tiles {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+  }
+  
+  .movie-tile,
+  .event-tile,
+  .sports-tile,
+  .play-tile {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .movie-poster,
+  .event-poster,
+  .sports-poster,
+  .play-poster {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .see-more {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #007bff;
+  }
+  

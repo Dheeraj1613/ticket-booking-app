@@ -1,0 +1,126 @@
+/* Background image for the entire page */
+.registration-page {
+  background-image: url('../background.png'); /* Background image for the page */
+  background-size: cover;
+  background-position: center;
+  width: 2000px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Curved box with form and image inside */
+.registration-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: row;
+  width: 840px; /* Increased width for better layout */
+  height: 770px; /* Increased height to ensure form elements are visible */
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Left half of the box for the form */
+.form-section {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+/* Right half of the box for the image */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.form-image {
+  width: 100%;
+  height: 70%;
+  object-fit: cover; /* Ensures the image fills the area appropriately */
+}
+
+/* Styling for the form */
+.registration-heading {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Add space below the city dropdown */
+.city-select-container {
+    margin-bottom: 15px; 
+    width: 97%;
+  }
+
+form input,
+form select {
+  padding: 12px;
+  margin-bottom: 15px;
+  width: 90%; /* Adjusted to fit the form section */
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.react-select__control {
+  width: 80%; /* Same width as input fields */
+  padding: 0;
+  border-radius: 5px;
+}
+
+.verify-button,
+.submit-button {
+  padding: 12px;
+  width: 100%; /* Buttons now span the full width of the form */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0; /* Adjusted margin for spacing */
+}
+
+.verify-button:hover,
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #ff4d4f;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .registration-box {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+
+  .image-section {
+    display: none; /* Hide image on smaller screens */
+  }
+
+  .form-section {
+    width: 100%; /* Full width for the form on mobile */
+    padding: 20px;
+  }
+
+  .verify-button,
+  .submit-button {
+    width: 100%; /* Ensure buttons still span full width */
+  }
+}

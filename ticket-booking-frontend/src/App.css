@@ -1,0 +1,183 @@
+/* General styles */
+body {
+  font-family: 'Montserrat', sans-serif; /* Classy font */
+  background-color: #f4f4f4;
+  margin: 0;
+  height: 100vh; /* Ensure body takes full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center everything vertically and horizontally */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -30px; /* Move the box slightly upwards */
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 48px; /* Increase the size for a more impactful heading */
+  font-family: 'Playfair Display', serif; /* Use a classy serif font */
+  color: #333;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the login forms and the image */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150%;
+  max-width: 900px; /* Adjust as needed for a better layout */
+  background-color: white;
+  border-radius: 20px; /* Curvy edges */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 40px;
+  box-sizing: border-box;
+  margin-top: 20px; /* Reduce top margin to move box higher */
+  position: relative;
+  top: -30px; /* Move the box slightly upwards */
+}
+
+/* Form container for login */
+.form-container {
+  width: 50%; /* Take 50% of the width */
+  padding: 30px;
+  box-sizing: border-box;
+  transition: transform 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.welcome-text {
+  font-size: 22px;
+  color: #333;
+  font-weight: bold;
+}
+
+.credential-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Google button styling */
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.google-button img {
+  margin-right: 10px;
+}
+
+.google-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.google-button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Link styling for new user registration */
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Toggle button for switching between User/Admin login */
+.toggle-button {
+  cursor: pointer;
+  color: #007bff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Style for the promotional image */
+.large-image {
+  width: 45%; /* Take the remaining 45% of the container */
+  object-fit: cover; /* Make sure the image covers the entire available area */
+  height: 500px;
+  border-radius: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the form and image vertically */
+    align-items: center;
+  }
+
+  .form-container, .large-image {
+    width: 100%; /* Make both elements take full width */
+  }
+
+  .large-image {
+    margin-top: 20px; /* Add space between the form and image */
+  }
+}
